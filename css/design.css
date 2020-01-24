@@ -1,0 +1,246 @@
+ body{
+    background-image: url('https://wallarthd.com/wp-content/uploads/2015/05/dark-galaxy-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card-container{
+    margin: 0;
+    padding: 10px;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    perspective:900px;
+    margin: 15px;
+    background-color:none;
+}
+.card-container li {
+    display: inline-block;
+}
+.mainlogo img {
+    height: auto;
+    max-height: 100px;
+    width: auto;
+    padding-left:280px;
+}
+@media screen and (max-width:1024px) {
+    .mainlogo img {
+       display: none;
+    }
+}
+.logo img {
+    position: relative;
+    height: auto;
+    max-height: 100px;
+    width: auto;
+    margin-right: 180px;
+    margin-left: 10px;
+}
+@media screen and (max-width:1024px) {
+    .logo img {
+       height: 100px;
+       width: auto;
+    }
+}
+.e-details {
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    width: 80% 
+}
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#st-box {
+    padding-left:130px;
+}
+@media screen and (max-width:1024px) {
+    #st-box {
+       padding-left:40px;
+    }
+}
+#nd-box{
+    padding-left:50px;
+}
+.try_box{
+    padding-left:50px;
+}
+.last_box{
+    padding-left: 556px;
+}
+@media screen and (max-width:767px) {
+    .last_box {
+       padding-left:30px;
+    }
+}
+.card{
+    position:relative;
+    width:100%;
+    height: 100%;
+    transition: all .7s;
+    transform-style: preserve-3d;
+}
+.card-container:hover .card{
+    transform: rotateY(-180deg);
+}
+.Front{
+    background:linear-gradient(90deg,#5c656d, #0066FF) 
+}
+.Back{
+    background :linear-gradient(90deg, rgb(255, 42, 113), #FA58AC);
+    transform: rotateY(-180deg);
+}
+.Front, .Back{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(192, 29, 29);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    backface-visibility: hidden;
+}
+.glitch{
+    position: relative;
+    text-transform:uppercase;
+    color:#007EFF;
+    font-size:50px;
+    letter-spacing:10px;
+}
+@media screen and (max-width:1024px) {
+    .glitch{
+       position: relative;
+       text-transform:uppercase;
+       color:#007EFF;
+       font-size:50px;
+       letter-spacing:10px;
+       margin-left:65px;
+    }
+}
+.glitch::before, .glitch::after{
+    content: 'Ethereal 2.O Events';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    text-transform:uppercase;
+    opacity: .8;
+}
+hr {
+    width: 90%;
+    border: 0;
+    height: 1px;
+    background: #000;
+    opacity: 0.2;
+}
+.headg {
+    text-align: center;
+    position: relative;
+    color:#8A0868;
+    font-size: 2em;
+    margin-top: 5px;
+    text-shadow: 5px 5px 10px #fff;
+    font-family: 'Bungee Inline', cursive 
+}
+.des{
+    color:#fff;
+    letter-spacing :1px;
+    line-height:1.6;
+    font-family: 'Shadows Into Light', cursive;
+    opacity:0.6;
+    padding: 10px;
+    display: block;
+}
+ .ethereal{
+    color:#fff;
+    letter-spacing :1px;
+    line-height:1.6;
+    font-family: 'Shadows Into Light', cursive;
+    width : 400px;
+    height :100px;
+    opacity:0.6;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+.type-1{
+    width:1px;
+    height:1px;
+}
+.type-2{
+    width:2px;
+    height:2px;
+}
+.type-3{
+    width:3px;
+    height:3px;
+}
+@keyframes move{
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform:translateY(-1000px);
+    }
+}
+.engrave{
+    font-weight:800;
+    font-size:40px;
+    text-transform: uppercase;
+    letter-spacing:.08em;
+    background-color:#8225E2;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.glitch::before{
+    color: #14e2e2;
+    z-index: -2;
+    animation: effect .9s ease infinite;
+}
+.glitch:after{
+    color: #ff2a78;
+    z-index: -1;
+    animation: effect .9s ease reverse infinite;
+}
+@keyframes effect {
+    0% {
+       transform: translate(0) 
+    }
+    20% {
+       transform: translate(-3px, 3px) 
+    }
+    40% {
+       transform: translate(-3px, -3px) 
+    }
+    60% {
+       transform: translate(3px, 3px) 
+    }
+    80% {
+       transform: translate(3px, -3px) 
+    }
+    100% {
+       transform: translate(0) 
+    }
+}
