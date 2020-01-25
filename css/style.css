@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
  
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -699,6 +699,81 @@ pre {
 .offset-11 {
   margin-left: 91.66667%; }
 
+  .headg
+  {
+      
+          text-align: center;
+          position: relative;
+          color:#8A0868;
+          font-size: 2em;
+          margin-top: 5px;
+          text-shadow: 5px 5px 10px #fff;
+          font-family: 'Bungee Inline', cursive;
+         
+  }
+  .des{
+      color:#fff;
+      letter-spacing :1px;
+      line-height:1.4;
+      font-family: 'Shadows Into Light' , cursive;
+      color:  black;
+      display: block;
+      
+  }
+
+     .pink{
+    background:rgb(156, 156, 216)   }
+      .co{
+          color:#4d310d;
+          margin-top:-50px;
+      }
+    .card1{
+      margin-left: 0px;
+      background: rgba(136, 135, 135, 0.5);
+      }
+    .card2{
+    margin-left: 100px;
+    background: rgba(136, 135, 135, 0.5);
+    }
+    @media only screen and (max-width: 1026px) {
+      .card2 {
+        margin-left:0px;
+        margin-top:40px;
+        }}
+    
+    .card-title
+    {
+      letter-spacing :1px;
+      line-height:1.5;
+      font-size:2em;
+      font-family: 'Shadows Into Light' , cursive;
+    }
+    .inner{
+          overflow: hidden;
+      }
+      .inner img{
+          transition:transform 300ms linear;
+          
+      }
+       
+      .inner:hover img{
+          transform: scale(1.2);
+          
+      }
+       .card-img-top
+       {
+         width: 350px;
+         height: 350px;
+         /* background-size: cover; 
+         */
+
+       }
+
+
+
+
+
+  
 @media (min-width: 576px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
@@ -6554,7 +6629,8 @@ button.bg-dark:focus {
 color: #0f0f0f;
 padding-bottom: 4em;
 }
-.mb-4,
+.
+,
 .my-4 {
   margin-bottom: 1.5rem !important;
  }
@@ -9003,12 +9079,20 @@ h1, h2, h3, h4, h5,
         font-size: 14px; }
 
         .but-pad{
-          margin-left: 500px;
+          margin-left: 480px;
+        }
+        .but-pad1{
+          margin-left: 450px;
+          margin-top: 50px;
         }
         @media only screen and (max-width: 1026px) {
           .but-pad {
             margin-left:125px;
             }}
+        @media only screen and (max-width: 1026px) {
+              .but-pad1 {
+                margin-left:85px;
+                }}
       @media (max-width: 767.98px) {
         .ftco-schedule .nav-pills .nav-link {
           color: rgba(255, 255, 255, 0.7); } }
